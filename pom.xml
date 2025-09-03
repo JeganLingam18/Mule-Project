@@ -31,7 +31,8 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				    <cloudHubDeployment>
+				    <deployment>
+				    	  <type>cloudhub2</type>
 					      <uri>https://anypoint.mulesoft.com</uri>
 					      <muleVersion>${mule.version}</muleVersion>
 					      <username>${anypoint.username}</username>
@@ -42,8 +43,10 @@
 					      <region>us-east-1</region>
 					      <workerType>${vCore}</workerType>
 					      <workers>${workers}</workers>
+					      <cpuReserved>0.1</cpuReserved> 
+    					  <memoryReserved>0.5</memoryReserved> 
 					      <objectStoreV2>true</objectStoreV2>
-				    </cloudHubDeployment>
+				    </deployment>
 			    <classifier>mule-application</classifier>
 			  </configuration>			
 			</plugin>

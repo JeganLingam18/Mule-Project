@@ -31,7 +31,7 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				    <deployment>
+				    <cloudhubDeployment>
 					   	  <uri>https://anypoint.mulesoft.com</uri>
 					      <provider>MC</provider>
 					      <muleVersion>${mule.version}</muleVersion>
@@ -48,7 +48,7 @@
 					      <cpuReserved>0.1</cpuReserved> 
     					  <memoryReserved>0.5</memoryReserved> 
 					      <objectStoreV2>true</objectStoreV2>
-				    </deployment>
+				    </cloudhubDeployment>
 			  </configuration>			
 			</plugin>
 		</plugins>

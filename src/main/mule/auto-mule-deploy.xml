@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="cd017d38-5d3f-4796-b7df-8e0e289b2494" >
+		<http:listener-connection host="0.0.0.0" port="8081"/>
+	</http:listener-config>
+	<flow name="auto-mule-deployFlow" doc:id="2b34fc90-d3de-42f3-ab03-a44567adbad6" >
+		<http:listener doc:name="Listener" doc:id="ec5bd143-d0f1-4e2f-a7b1-19b72e26a7b9" config-ref="HTTP_Listener_config" path="/mule"/>
+		<ee:transform doc:name="Transform Message" doc:id="491dbc96-fca9-45f0-86d0-a9a781bc279a" >
+			<ee:message >
+				<ee:set-payload ><![CDATA["It's Mule CI/CD Project"]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>

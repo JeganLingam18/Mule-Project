@@ -38,6 +38,7 @@
 					      <environment>${env}</environment>
 					      <applicationName>${appname}</applicationName>
 					      <businessGroup>${business}</businessGroup>
+					      <region>us-east-1</region>
 					      <workerType>${vCore}</workerType>
 					      <workers>${workers}</workers>
 					      <objectStoreV2>true</objectStoreV2>

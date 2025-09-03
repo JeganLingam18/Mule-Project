@@ -31,7 +31,7 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				    <deployment>
+				    <anypointDeployment>
 				    	  <target>CH2</target>
 					      <uri>https://anypoint.mulesoft.com</uri>
 					      <muleVersion>${mule.version}</muleVersion>
@@ -41,13 +41,14 @@
 					      <applicationName>${appname}</applicationName>
 					      <businessGroup>${business}</businessGroup>
 					      <region>us-east-2</region>
-					      <workerType>${vCore}</workerType>
-					      <workers>${workers}</workers>
+					      <workers>
+					        <amount>${workers}</amount>
+					        <type>${vCore}</type>
+					      </workers>
 					      <cpuReserved>0.1</cpuReserved> 
     					  <memoryReserved>0.5</memoryReserved> 
 					      <objectStoreV2>true</objectStoreV2>
-				    </deployment>
-			    <classifier>mule-application</classifier>
+				    </anypointDeployment>
 			  </configuration>			
 			</plugin>
 		</plugins>

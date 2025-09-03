@@ -31,9 +31,9 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				    <anypointDeployment>
-				    	  <target>CH2</target>
-					      <uri>https://anypoint.mulesoft.com</uri>
+				    <deployment>
+					   	  <uri>https://anypoint.mulesoft.com</uri>
+					      <provider>MC</provider>
 					      <muleVersion>${mule.version}</muleVersion>
 					      <username>${anypoint.username}</username>
 					      <password>${anypoint.password}</password>
@@ -48,7 +48,7 @@
 					      <cpuReserved>0.1</cpuReserved> 
     					  <memoryReserved>0.5</memoryReserved> 
 					      <objectStoreV2>true</objectStoreV2>
-				    </anypointDeployment>
+				    </deployment>
 			  </configuration>			
 			</plugin>
 		</plugins>

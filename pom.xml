@@ -31,6 +31,7 @@
 				<extensions>true</extensions>
 				<configuration>
 				    <cloudhub2Deployment>
+				    	<target>cloudhub2</target>
 				        <uri>https://anypoint.mulesoft.com</uri>
 				        <provider>MC</provider>
 				        <muleVersion>${app.runtime}</muleVersion>

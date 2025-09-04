@@ -34,6 +34,7 @@
 				    	<target>cloudhub2</target>
 				        <uri>https://anypoint.mulesoft.com</uri>
 				        <provider>MC</provider>
+				        <target>${targetName}</target>
 				        <muleVersion>${app.runtime}</muleVersion>
 				        <username>${anypoint.username}</username>
 				        <password>${anypoint.password}</password>

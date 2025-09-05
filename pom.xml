@@ -40,7 +40,7 @@
 			                <classifier>mule-application</classifier>
 			                <username>${anypoint.username}</username>
 			                <password>${anypoint.password}</password>
-			                <organization>${business}</organization>
+			                <organization>1ff162ac-85a4-4f8b-875b-da9756b22b99</organization>
 			            </configuration>
 			        </execution>
 		    	</executions>

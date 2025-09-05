@@ -29,6 +29,21 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<executions>
+			        <execution>
+			            <id>deploy-to-exchange</id>
+			            <phase>deploy</phase>
+			            <goals>
+			                <goal>deploy</goal>
+			            </goals>
+			            <configuration>
+			                <classifier>mule-application</classifier>
+			                <username>${anypoint.username}</username>
+			                <password>${anypoint.password}</password>
+			                <organization>${business}</organization>
+			            </configuration>
+			        </execution>
+		    	</executions>
 				<configuration>
 				    <cloudhub2Deployment>
 				    	<target>cloudhub2</target>

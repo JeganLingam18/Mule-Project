@@ -16,7 +16,13 @@
 		<app.runtime>4.9.0</app.runtime>
 		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
 	</properties>
-
+	<distributionManagement>
+    <repository>
+        <id>exchange-repository</id>
+        <name>Exchange Repository</name>
+        <url>https://maven.anypoint.mulesoft.com/api/v1/organizations/1ff162ac-85a4-4f8b-875b-da9756b22b99/maven</url>
+    </repository>
+	</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
@@ -29,21 +35,6 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				<executions>
-			        <execution>
-			            <id>deploy-to-exchange</id>
-			            <phase>deploy</phase>
-			            <goals>
-			                <goal>deploy</goal>
-			            </goals>
-			            <configuration>
-			                <classifier>mule-application</classifier>
-			                <username>${anypoint.username}</username>
-			                <password>${anypoint.password}</password>
-			                <organization>1ff162ac-85a4-4f8b-875b-da9756b22b99</organization>
-			            </configuration>
-			        </execution>
-		    	</executions>
 				<configuration>
 				    <cloudhub2Deployment>
 				    	<target>cloudhub2</target>
@@ -59,8 +50,7 @@
 				        <replicas>1</replicas>
 				        <vCores>0.1</vCores>
 				    </cloudhub2Deployment>
-				</configuration>
-	
+				</configuration>	
 			</plugin>
 		</plugins>
 	</build>

@@ -42,8 +42,9 @@
 				        <provider>MC</provider>
 				        <target>${targetName}</target>
 				        <muleVersion>${app.runtime}</muleVersion>
-				        <username>${anypoint.username}</username>
-				        <password>${anypoint.password}</password>
+				        <connectedAppClientId>${anypoint.clientId}</connectedAppClientId>
+				        <connectedAppClientSecret>${anypoint.clientSecret}</connectedAppClientSecret>
+				        <connectedAppGrantType>client_credentials</connectedAppGrantType>
 				        <environment>${env}</environment>
 				        <applicationName>${appname}</applicationName>
 				        <businessGroup>${business}</businessGroup>

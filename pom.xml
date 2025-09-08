@@ -38,20 +38,13 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<exchange>
-						<organization>1ff162ac-85a4-4f8b-875b-da9756b22b99</organization>
-						<connectedAppClientId>${anypoint.clientId}</connectedAppClientId>
-						<connectedAppClientSecret>${anypoint.clientSecret}</connectedAppClientSecret>
-						<connectedAppGrantType>client_credentials</connectedAppGrantType>
-					</exchange>
 					<cloudhub2Deployment>
-						<target>cloudhub2</target>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<provider>MC</provider>
 						<target>${targetName}</target>
 						<muleVersion>${app.runtime}</muleVersion>
-						<connectedAppClientId>${anypoint.clientId}</connectedAppClientId>
-						<connectedAppClientSecret>${anypoint.clientSecret}</connectedAppClientSecret>
+						<connectedAppClientId>69cd8727bbfc4cd6abc885a222aa3385</connectedAppClientId>
+						<connectedAppClientSecret>bDB67202c51c4cb286415594be98CE72</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<environment>${anypoint.env}</environment>
 						<applicationName>${app.name}</applicationName>

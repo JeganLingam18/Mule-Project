@@ -44,6 +44,7 @@
 					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<provider>MC</provider>
+						<target>Cloudhub-US-East-2</target>
 						<muleVersion>${app.runtime}</muleVersion>
 						<connectedAppClientId>69cd8727bbfc4cd6abc885a222aa3385</connectedAppClientId>
 						<connectedAppClientSecret>bDB67202c51c4cb286415594be98CE72</connectedAppClientSecret>

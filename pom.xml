@@ -22,7 +22,7 @@
 		<repository>
 			<id>exchange-repository</id>
 			<name>Exchange Repository</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v1/organizations/1ff162ac-85a4-4f8b-875b-da9756b22b99/maven</url>
+			<url>https://maven.anypoint.mulesoft.com/api/v1/organizations/${anypoint.orgId}/maven</url>
 		</repository>
 	</distributionManagement>
 	<build>
@@ -49,8 +49,8 @@
 						<provider>MC</provider>
 						<target>${targetName}</target>
 						<muleVersion>${app.runtime}</muleVersion>
-						<connectedAppClientId>${anypoint.clientId}</connectedAppClientId>
-						<connectedAppClientSecret>${anypoint.clientSecret}</connectedAppClientSecret>
+						<connectedAppClientId>${anypoint.username}</connectedAppClientId>
+						<connectedAppClientSecret>${anypoint.password}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<environment>${anypoint.env}</environment>
 						<applicationName>${app.name}</applicationName>

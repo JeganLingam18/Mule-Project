@@ -52,8 +52,8 @@
 						<connectedAppClientId>${anypoint.clientId}</connectedAppClientId>
 						<connectedAppClientSecret>${anypoint.clientSecret}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
-						<environment>${env}</environment>
-						<applicationName>${appname}</applicationName>
+						<environment>${anypoint.env}</environment>
+						<applicationName>${app.name}</applicationName>
 						<businessGroup>${business}</businessGroup>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>

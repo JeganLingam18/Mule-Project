@@ -15,5 +15,6 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 				<ee:set-payload ><![CDATA["It's Mule with Jenkins CI/CD Project"]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="acf794b1-74cd-4375-900c-b2b16595eff5" message='"Flow Ended"'/>
 	</flow>
 </mule>

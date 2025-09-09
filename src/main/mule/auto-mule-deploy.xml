@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<http:listener doc:name="Listener" doc:id="ec5bd143-d0f1-4e2f-a7b1-19b72e26a7b9" config-ref="HTTP_Listener_config" path="/mule"/>
 		<ee:transform doc:name="Transform Message" doc:id="491dbc96-fca9-45f0-86d0-a9a781bc279a" >
 			<ee:message >
-				<ee:set-payload ><![CDATA["It's Mule CI/CD Project"]]></ee:set-payload>
+				<ee:set-payload ><![CDATA["It's Mule with Jenkins CI/CD Project"]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
 	</flow>
